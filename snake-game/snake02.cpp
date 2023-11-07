@@ -89,7 +89,6 @@ void Draw()
     cout << endl;
     cout << endl;
     cout << "Scores: " << scores << endl;
-    cout << "Lives: " << lives << endl;
 }
 
 void Input()
@@ -176,12 +175,11 @@ void Logic()
         }
     }
 
-    if (x == fruitX ) //This is the continuation of the updated code with the added color
     if (x == fruitX && y == fruitY)
     {
         scores += 10;
         fruitX = rand() % width;
-        fruitY = rand() % height;
+fruitY = rand() % height;
         nTail++;
     }
 }
